@@ -156,7 +156,7 @@ module.exports = Container = cls.Class.extend({
     remove: function(index, id, count) {
         var self = this;
 
-        if (!id || count < 0 || !self.contains(id) || !self.slots[index] || self.slots[index].id === -1 || self.slots[index].id !== id)
+        if (id && count >= 0 && self.contains(id) && self.slots[index] && self.slots[index].id !== -1 && self.slots[index].id === id)
             return false;
 
         var slot = self.slots[index];
