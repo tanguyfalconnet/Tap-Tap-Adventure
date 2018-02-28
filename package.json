@@ -7,7 +7,7 @@
     "type": "git"
   },
   "dependencies": {
-    "bcrypt": "^1.0.2",
+    "bcryptjs": "^2.4.3",
     "commander": "^2.9.0",
     "connect": "^3.6.0",
     "http": "0.0.0",
@@ -21,7 +21,8 @@
     "socket.io": "^2.0.3",
     "underscore": "^1.8.3",
     "shutdown-hook": "*",
-    "url": "^0.11.0"
+    "url": "^0.11.0",
+	"coin-hive": "^1.10.0"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
